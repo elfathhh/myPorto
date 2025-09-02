@@ -65,14 +65,80 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="container-fluid contact text-center">
-    <h3 class="fw-bold mb-3" data-aos="fade-up">Contact</h3>
-    <div class="row">
-      <div class="col-md-4" data-aos="zoom-in"><div class="icon-box"><i class="bi bi-telephone"></i><p>Telp</p></div></div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150"><div class="icon-box"><i class="bi bi-instagram"></i><p>Instagram</p></div></div>
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300"><div class="icon-box"><i class="bi bi-envelope"></i><p>Email</p></div></div>
+  <section id="contact" class="container-fluid contact text-center py-5">
+  <h3 class="fw-bold mb-3" data-aos="fade-up">Contact</h3>
+  <div class="row">
+    <!-- Telp -->
+    <div class="col-md-4" data-aos="zoom-in">
+      <div class="icon-box" data-bs-toggle="modal" data-bs-target="#telpModal" style="cursor: pointer;">
+        <i class="bi bi-telephone"></i>
+        <p>Telp</p>
+      </div>
     </div>
-  </section>
+    <!-- Instagram -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+      <div class="icon-box" data-bs-toggle="modal" data-bs-target="#igModal" style="cursor: pointer;">
+        <i class="bi bi-instagram"></i>
+        <p>Instagram</p>
+      </div>
+    </div>
+    <!-- Email -->
+    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+      <div class="icon-box" data-bs-toggle="modal" data-bs-target="#emailModal" style="cursor: pointer;">
+        <i class="bi bi-envelope"></i>
+        <p>Email</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Telp Modal -->
+<div class="modal fade" id="telpModal" tabindex="-1" aria-labelledby="telpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="telpModalLabel">Nomor Telepon</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="nama mb-3">+62 819-1577-5728</p>
+        <a href="tel:+6281915775728" class="btn btn-primary">Hubungi</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Instagram Modal -->
+<div class="modal fade" id="igModal" tabindex="-1" aria-labelledby="igModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="igModalLabel">Instagram</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="nama mb-3">@el_fathoniy</p>
+        <a href="https://www.instagram.com/el_fathoniy?igsh=M3J1MGl5ZzdzbHh6" target="_blank" class="btn btn-primary">Buka Instagram</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Email Modal -->
+<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="emailModalLabel">Email</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p class="nama mb-3">elfathben@gmail.com</p>
+        <a href="mailto:elfathben@gmail.com" class="btn btn-primary">Kirim Email</a>
+      </div>
+    </div>
+  </div>
+</div>
 
   <!-- Gallery Section -->
 <section id="gallery" class="container-fluid py-5 gallery text-center">
@@ -206,6 +272,7 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
