@@ -1,282 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - el_fath</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hari II | Minggu I</title>
 </head>
-<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="80" tabindex="0">
+<style>
+     
+    body{
+        background-color: cadetblue;
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">el_fath</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    }
 
+    h1{
+        text-align: center;
+    }
+    
+    .card{
+        width: 300px;
+        margin: 0 auto;
+        padding: 16px;
+        border-radius: 1px solid #ccc;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
 
-  <!-- About Me Section -->
-  <section id="about" class="container text-center text-md-start py-5 d-md-flex align-items-center justify-content-between">
-    <div class="header-text" data-aos="fade-right">
-      <h3>M. Bani Ilham <br>Fathoni</h3>
-      <p>Seorang mahasiswa Informatika yang berfokus pada pengembangan aplikasi dan web, tapi belakangan juga tertarik dengan Cyber Security. Dengan semangat untuk terus belajar dan menciptakan solusi digital yang bermanfaat. </p>
-    </div>
-    <div class="text-end about-img" data-aos="fade-left">
-      <img src="img/aku.png" alt="Profile" class="img-fluid">
-    </div>
-  </section>
+    .angka{
+        font-size: 50px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .buttons{
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
 
-  <!-- Experience -->
-  <section id="experience" class="container-fluid experience text-center">
-    <h3 class="fw-bold mb-3" data-aos="fade-up">My Experience</h3>
-    <div class="row justify-content-center align-items-center">
-      <div class="col-md-2 d-flex justify-content-center" data-aos="zoom-in"><img src="img/LOGO 5.png" class="img-fluid logo-img"></div>
-      <div class="col-md-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="100"><img src="img/pkm25.png" class="img-fluid logo-img"></div>
-      <div class="col-md-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="200"><img src="img/nograd-01.png" class="img-fluid logo-img"></div>
-      <div class="col-md-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="300"><img src="img/HMPSI-removebg-preview.png" class="img-fluid logo-img"></div>
-      <div class="col-md-2 d-flex justify-content-center" data-aos="zoom-in" data-aos-delay="400"><img src="img/himmah.png" class="img-fluid logo-img"></div>
-    </div>
-  </section>
+         
+    .buttons>div{
+        padding: 8px 16px;
+        background-color: darkcyan;
+        color: #ffffff;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <h1>TAMBAH ANGKA</h1>
+    
 
-  <!-- Skills -->
-  <section id="skills" class="container-fluid skills text-center">
-    <h3 class="fw-bold mb-3" data-aos="fade-up">Skills</h3>
-    <div class="row">
-      <div class="col-md-4" data-aos="flip-left"><div class="icon-box"><i class="bi bi-code-slash"></i><p>Web Developer</p></div></div>
-      <div class="col-md-4" data-aos="flip-left" data-aos-delay="150"><div class="icon-box"><i class="bi bi-camera-reels"></i><p>Video Editor</p></div></div>
-      <div class="col-md-4" data-aos="flip-left" data-aos-delay="300"><div class="icon-box"><i class="bi bi-book"></i><p>Religion Knowledge</p></div></div>
-    </div>
-  </section>
+    <div class="card">
 
-  <!-- Contact -->
-  <section id="contact" class="container-fluid contact text-center py-5">
-  <h3 class="fw-bold mb-3" data-aos="fade-up">Contact</h3>
-  <div class="row">
-    <!-- Telp -->
-    <div class="col-md-4" data-aos="zoom-in">
-      <div class="icon-box" data-bs-toggle="modal" data-bs-target="#telpModal" style="cursor: pointer;">
-        <i class="bi bi-telephone"></i>
-        <p>Telp</p>
-      </div>
-    </div>
-    <!-- Instagram -->
-    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
-      <div class="icon-box" data-bs-toggle="modal" data-bs-target="#igModal" style="cursor: pointer;">
-        <i class="bi bi-instagram"></i>
-        <p>Instagram</p>
-      </div>
-    </div>
-    <!-- Email -->
-    <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
-      <div class="icon-box" data-bs-toggle="modal" data-bs-target="#emailModal" style="cursor: pointer;">
-        <i class="bi bi-envelope"></i>
-        <p>Email</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Telp Modal -->
-<div class="modal fade" id="telpModal" tabindex="-1" aria-labelledby="telpModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="telpModalLabel">Nomor Telepon</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p class="nama mb-3">+62 819-1577-5728</p>
-        <a href="tel:+6281915775728" class="btn btn-primary">Hubungi</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Instagram Modal -->
-<div class="modal fade" id="igModal" tabindex="-1" aria-labelledby="igModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="igModalLabel">Instagram</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p class="nama mb-3">@el_fathoniy</p>
-        <a href="https://www.instagram.com/el_fathoniy?igsh=M3J1MGl5ZzdzbHh6" target="_blank" class="btn btn-primary">Buka Instagram</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Email Modal -->
-<div class="modal fade" id="emailModal" tabindex="-1" aria-labelledby="emailModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="emailModalLabel">Email</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-      </div>
-      <div class="modal-body text-center">
-        <p class="nama mb-3">elfathben@gmail.com</p>
-        <a href="mailto:elfathben@gmail.com" class="btn btn-primary">Kirim Email</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-  <!-- Gallery Section -->
-<section id="gallery" class="container-fluid py-5 gallery text-center">
-  <h3 class="fw-bold mb-4" data-aos="fade-up">Gallery</h3>
-  <div class="container">
-    <div class="row g-4">
-
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="card gallery-card">
-          <img src="img/eg.jpg" class="card-img-top" alt="Gallery 1">
-          <div class="card-body">
-            <h5 class="card-title">TM Web Statis ITC VIII 2025</h5>
-            <p class="card-text">Technical Meeting lomba Web Statis pada even IT Competition VIII Fakultas Teknik 2025.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card gallery-card">
-          <img src="img/wq.jpg" class="card-img-top" alt="Gallery 2">
-          <div class="card-body">
-            <h5 class="card-title">TM Web Statis VIII 2025</h5>
-            <p class="card-text">Technical Meeting lomba Web Statis pada even IT Competition VIII Fakultas Teknik 2025.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card gallery-card">
-          <img src="img/df.jpg" class="card-img-top" alt="Gallery 3">
-          <div class="card-body">
-            <h5 class="card-title">First Mobile Project</h5>
-            <p class="card-text">Project Aplikasi Mobile Pertama (MP3Player) 👀</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="card gallery-card">
-          <img src="img/sda.jpg" class="card-img-top" alt="Gallery 1">
-          <div class="card-body">
-            <h5 class="card-title">Diskusi</h5>
-            <p class="card-text">Bersama pemateri seminar dengan tema "Ketika AI lebih pintar daripada Manusia" yang diadakan oleh HMPS Informatika.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card gallery-card">
-          <img src="img/vds.jpg" class="card-img-top" alt="Gallery 2">
-          <div class="card-body">
-            <h5 class="card-title">Diskusi</h5>
-            <p class="card-text">Bersama pemateri seminar dengan tema "Ketika AI lebih pintar daripada Manusia" yang diadakan oleh HMPS Informatika.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card gallery-card">
-          <img src="img/mf.jpg" class="card-img-top" alt="Gallery 3">
-          <div class="card-body">
-            <h5 class="card-title">Bimbingan IoT</h5>
-            <p class="card-text">Project : Monitoring Gas CO2 di Green House</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="card gallery-card">
-          <img src="img/ew.jpg" class="card-img-top" alt="Gallery 1">
-          <div class="card-body">
-            <h5 class="card-title">PKM 2025</h5>
-            <p class="card-text">Tim TPQ 3</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card gallery-card">
-          <img src="img/c.jpg" class="card-img-top" alt="Gallery 2">
-          <div class="card-body">
-            <h5 class="card-title">PKM 2025</h5>
-            <p class="card-text">Dengan pemborong Juara Lomba di TPQ Al-Habibah Embung Raja</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card gallery-card">
-          <img src="img/das.jpg" class="card-img-top" alt="Gallery 3">
-          <div class="card-body">
-            <h5 class="card-title">PKM 2025</h5>
-            <p class="card-text">Tim TPQ 3 dengan Pemenang Lomba Semarak HUT RI TPQ Al-Habibah</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="card gallery-card">
-          <img src="img/gdf.jpg" class="card-img-top" alt="Gallery 1">
-          <div class="card-body">
-            <h5 class="card-title">PKM 2024</h5>
-            <p class="card-text">Lomba Semarak 17 Agustus di desa Belanting, Samablia, Lombok Timur.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
-        <div class="card gallery-card">
-          <img src="img/l.jpg" class="card-img-top" alt="Gallery 2">
-          <div class="card-body">
-            <h5 class="card-title">PKM 2025</h5>
-            <p class="card-text">Menjadi komentator Lomba semarak 17-an.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
-        <div class="card gallery-card">
-          <img src="img/s.jpg" class="card-img-top" alt="Gallery 3">
-          <div class="card-body">
-            <h5 class="card-title">PKM 2025</h5>
-            <p class="card-text">Perpisahan Dengan adik-adik MTs NW Embung Raja</p>
-          </div>
-        </div>
-      </div>
+        <div class="angka">0</div>
+        <div class="buttons">
+            <div class="btn1">tambah</div>
+            <div class="btn2">kurang</div>
+            <div class="btn3">reset</div>
+        </div>  
 
     </div>
-  </div>
-</section>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- AOS JS -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000, once: true });
-  </script>
+    <script src="script.js"></script>
 </body>
 </html>
