@@ -127,6 +127,7 @@
     }
 
     .gallery-card{
+      background: linear-gradient(90deg, #1f1f1f, #243b55, #141e30);
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -164,4 +165,5 @@
     #gallery h3{
       font-size: 2rem;
       margin-bottom: 40px;
+
     }
