@@ -138,6 +138,10 @@
       cursor: pointer;
     }
 
+    .gallery-card h5{
+        color: white !important;
+    }
+
     .gallery-card img{
       height: 250px;
       width: 100%;
@@ -167,11 +171,11 @@
     }
 
     #gallery h3{
-      color: white !important;
       font-size: 2rem;
       margin-bottom: 40px;
 
     }
+
 
 
 
