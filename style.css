@@ -150,6 +150,10 @@
       flex: 1;
     }
 
+    .gallery-card p{
+        color: white;
+    }
+
     .gallery img{
       object-fit: cover;
       height: 250px;
@@ -167,4 +171,5 @@
       margin-bottom: 40px;
 
     }
+
 
