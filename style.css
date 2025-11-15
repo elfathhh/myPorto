@@ -151,7 +151,7 @@
     }
 
     .gallery-card p{
-        color: white;
+        color: white !important;
     }
 
     .gallery img{
@@ -171,5 +171,6 @@
       margin-bottom: 40px;
 
     }
+
 
 
