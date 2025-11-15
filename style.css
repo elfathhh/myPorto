@@ -167,10 +167,12 @@
     }
 
     #gallery h3{
+      color: white !important;
       font-size: 2rem;
       margin-bottom: 40px;
 
     }
+
 
 
 
